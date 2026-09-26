@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>FAQ — NODEX</title>
+  <meta name="description" content="Answers to the most common questions about NODEX orders, shipping, returns, warranty and vintage gadgets." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Zen+Kaku+Gothic+New:wght@500;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/help.css" />
+</head>
+<body class="hp-page hp--faq">
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>READ ME FIRST</span><span>▲</span><span>ORDERS</span><span>▲</span><span>SHIPPING</span><span>▲</span><span>RETURNS</span><span>▲</span><span class="kanji">よくある質問</span><span>▲</span><span>VINTAGE</span><span>▲</span><span>A REAL PERSON ANSWERS</span><span>▲</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <a class="mast__logo" href="index.html" aria-label="NODEX home">NODEX<small>®</small></a>
+    <nav class="mast__nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="new-in.html">New In</a>
+      <a href="deals.html">Deals</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <a href="bag.html" class="mast__bag" id="bagLink">Bag (<b data-bag-count>0</b>)</a>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html"><span>00</span>Home</a>
+    <a href="shop.html"><span>01</span>Shop</a>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <a href="deals.html"><span>03</span>Deals</a>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <a href="about.html"><span>05</span>About</a>
+    <a href="contact.html"><span>06</span>Contact</a>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main>
+    <!-- =====================================================
+         COVER — owner's manual
+         ===================================================== -->
+    <section class="hp-cover" id="hpCover">
+      <div class="hp-cover__bg" aria-hidden="true"></div>
+
+      <div class="hp-cover__copy">
+        <p class="hp-issue"><span class="hp-acc">HELP DESK</span><span>SECTION 01</span><span>UPDATED SEPT 2026</span></p>
+        <p class="hp-cover__kick"><b aria-hidden="true">!</b>READ ME FIRST</p>
+        <h1 class="hp-cover__title" aria-label="FAQ">FAQ<em>?</em></h1>
+        <p class="hp-cover__lead">Everything people usually ask us about orders, delivery, returns and our vintage gadgets. Type a word to find your answer in a second.</p>
+        <div class="hp-stats">
+          <span><b id="faqTotal">19</b>QUESTIONS</span>
+          <span><b>5</b>TOPICS</span>
+          <span><b>24H</b>TO REPLY</span>
+        </div>
+        <div class="hp-cover__ctas">
+          <button class="hp-btn hp-btn--acc" id="toManual">FIND AN ANSWER ↓</button>
+          <a class="hp-btn" href="contact.html">ASK US →</a>
+        </div>
+      </div>
+
+      <figure class="hp-cover__art" id="coverArt">
+        <div class="booklet">
+          <div class="booklet__top"><span class="booklet__brand">NODEX<small>®</small></span><span>OWNER’S<br />MANUAL</span></div>
+          <p class="booklet__band">TROUBLESHOOTING</p>
+          <div class="booklet__fig">
+            <img src="img/console-psp.webp" alt="" />
+              <span class="callout callout--l" style="top:18%"><b>1</b>ORDERS</span>
+              <span class="callout callout--r" style="top:50%"><b>2</b>RETURNS</span>
+              <span class="callout callout--l" style="top:78%"><b>3</b>VINTAGE</span>
+          </div>
+          <p class="booklet__foot"><span>MODEL NX-FAQ</span><span>SECTION 01</span></p>
+        </div>
+        <span class="hp-cover__sticker" aria-hidden="true">READ<br />ME<br />FIRST</span>
+      </figure>
+    </section>
+
+    <nav class="desk-tabs" aria-label="Help pages">
+      <span class="is-current" aria-current="page">FAQ</span>
+      <a href="shipping.html">SHIPPING</a>
+      <a href="returns.html">RETURNS</a>
+      <a href="privacy.html">PRIVACY</a>
+      <a href="terms.html">TERMS</a>
+      <a href="contact.html">CONTACT →</a>
+    </nav>
+
+    <!-- =====================================================
+         MANUAL
+         ===================================================== -->
+    <div class="manual manual--solo" id="manual">
+      <article class="manual__body">
+        <div class="faq-tools">
+          <label class="faq-search"><input id="faqQ" type="search" placeholder="Search the questions…" aria-label="Search the questions" autocomplete="off" /><span id="faqCount"></span></label>
+          <div class="faq-chips" id="faqChips"></div>
+        </div>
+        <div id="faqList">
+          <section class="faq-group" id="orders" data-group="orders">
+            <h2><span>01</span>Orders & payment</h2>
+            <div class="qa" id="q-how-do-i-place-an-order"><button class="qa__q" aria-expanded="false">How do I place an order?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Add what you like to your bag, open the bag page, check the receipt and press checkout. You’ll get a confirmation email with your order number as soon as the payment goes through.</p></div></div></div>
+            <div class="qa" id="q-which-payment-methods-do-you-accept"><button class="qa__q" aria-expanded="false">Which payment methods do you accept?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Credit and debit cards, Apple Pay, Google Pay and PayPal. You can also split any order over €49 into 3 interest-free payments.</p></div></div></div>
+            <div class="qa" id="q-can-i-change-or-cancel-my-order"><button class="qa__q" aria-expanded="false">Can I change or cancel my order?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Yes, as long as it hasn’t left the bench yet. <a href="contact.html?topic=order">Write to us</a> with your order number as soon as possible and we’ll sort it out.</p></div></div></div>
+            <div class="qa" id="q-how-do-discount-codes-work"><button class="qa__q" aria-expanded="false">How do discount codes work?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Type the code in the discount box on the <a href="bag.html">bag page</a>. One code per order; codes can’t be combined. Today’s codes are on the <a href="deals.html#coupons">Deals page</a>.</p></div></div></div>
+          </section>
+          <section class="faq-group" id="shipping" data-group="shipping">
+            <h2><span>02</span>Shipping</h2>
+            <div class="qa" id="q-how-much-is-shipping"><button class="qa__q" aria-expanded="false">How much is shipping?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Free on orders over €49 in Italy and the EU. Below that it’s €4.90 in Italy and €9.90 in the rest of the EU. All rates are on the <a href="shipping.html">shipping page</a>.</p></div></div></div>
+            <div class="qa" id="q-when-will-my-order-arrive"><button class="qa__q" aria-expanded="false">When will my order arrive?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Orders placed before 14:00 leave the bench within two working days. Delivery then takes 1–2 working days in Italy and 2–5 in the rest of the EU.</p></div></div></div>
+            <div class="qa" id="q-how-do-i-track-my-parcel"><button class="qa__q" aria-expanded="false">How do I track my parcel?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>You get a tracking link by email as soon as the courier scans your parcel. If it hasn’t arrived after 3 working days, write to us.</p></div></div></div>
+            <div class="qa" id="q-do-you-ship-outside-the-eu"><button class="qa__q" aria-expanded="false">Do you ship outside the EU?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>We ship to the UK, Switzerland and Norway. Customs duties and import VAT may be charged on delivery by the courier. More countries soon.</p></div></div></div>
+          </section>
+          <section class="faq-group" id="returns" data-group="returns">
+            <h2><span>03</span>Returns & warranty</h2>
+            <div class="qa" id="q-can-i-return-something"><button class="qa__q" aria-expanded="false">Can I return something?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Yes, you have 30 days from delivery and returns are free. <a href="returns.html">Here’s how it works</a>.</p></div></div></div>
+            <div class="qa" id="q-when-do-i-get-my-refund"><button class="qa__q" aria-expanded="false">When do I get my refund?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Within 5 working days of the parcel reaching us, on the same payment method you used.</p></div></div></div>
+            <div class="qa" id="q-what-does-the-2-year-warranty-cover"><button class="qa__q" aria-expanded="false">What does the 2-year warranty cover?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Any fault that isn’t caused by an accident or misuse, on new and vintage products alike. We repair it, replace it or refund you.</p></div></div></div>
+            <div class="qa" id="q-can-i-exchange-a-colour"><button class="qa__q" aria-expanded="false">Can I exchange a colour?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Of course. Tell us which colour you’d like when you request the return and we’ll ship the new one as soon as the first is on its way back.</p></div></div></div>
+          </section>
+          <section class="faq-group" id="vintage" data-group="vintage">
+            <h2><span>04</span>Vintage & products</h2>
+            <div class="qa" id="q-do-vintage-gadgets-really-work"><button class="qa__q" aria-expanded="false">Do vintage gadgets really work?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Every single one is tested on a 40-point check, cleaned, and fitted with a new battery where it takes one. If it doesn’t pass, it doesn’t go on sale.</p></div></div></div>
+            <div class="qa" id="q-what-condition-are-vintage-items-in"><button class="qa__q" aria-expanded="false">What condition are vintage items in?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>They’re pre-loved, so small marks can happen. Anything more than light wear is mentioned in the product description and shown in the photos.</p></div></div></div>
+            <div class="qa" id="q-will-an-old-phone-take-my-sim"><button class="qa__q" aria-expanded="false">Will an old phone take my SIM?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Most of our phones take a standard SIM with an adapter and work on 2G/3G where it’s still available. Networks are switching 2G/3G off in some countries, so ask us about your carrier before you buy.</p></div></div></div>
+            <div class="qa" id="q-do-you-buy-old-gadgets"><button class="qa__q" aria-expanded="false">Do you buy old gadgets?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Yes! Send us a photo through the <a href="contact.html?topic=trade">contact page</a> and we’ll make you an offer in cash or store credit.</p></div></div></div>
+          </section>
+          <section class="faq-group" id="bag" data-group="bag">
+            <h2><span>05</span>Your bag & this website</h2>
+            <div class="qa" id="q-do-i-need-an-account"><button class="qa__q" aria-expanded="false">Do I need an account?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>No. Your bag is kept in your browser on this device, so it’s still there when you come back.</p></div></div></div>
+            <div class="qa" id="q-why-did-my-bag-empty"><button class="qa__q" aria-expanded="false">Why did my bag empty?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>Your bag lives in your browser’s storage. Private windows, a different browser or clearing site data start a new, empty bag.</p></div></div></div>
+            <div class="qa" id="q-do-you-use-cookies"><button class="qa__q" aria-expanded="false">Do you use cookies?<i aria-hidden="true">+</i></button><div class="qa__a" role="region"><div><p>No cookies and no tracking. The few things this site remembers (your bag, a discount code, a draft message) are listed on the <a href="privacy.html#device">privacy page</a>, where you can also clear them.</p></div></div></div>
+          </section>
+        </div>
+        <p class="faq-none" id="faqNone" hidden>No question matches that. <a href="contact.html">Ask us directly →</a></p>
+
+        <aside class="stuck">
+          <p>Still stuck?<small>A real person answers within 24 hours, Monday to Saturday.</small></p>
+          <a class="hp-btn" href="contact.html">WRITE TO US →</a>
+        </aside>
+      </article>
+    </div>
+  </main>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <a href="shop.html">All products</a>
+        <a href="new-in.html">New In</a>
+        <a href="deals.html">Deals</a>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <span class="is-current" aria-current="page">FAQ</span>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · <span class="kanji">東京</span> · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/help.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

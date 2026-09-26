@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>About — NODEX</title>
+  <meta name="description" content="The NODEX story: a folder of old ads, a scratched Discman and a shop that tests, restores and packs every gadget like a gift." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Yellowtail&family=Zen+Kaku+Gothic+New:wght@500;900&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body class="ab-page">
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>CONNECTING YOU SINCE 2026</span><span>✦</span><span>EVERY ITEM TESTED</span><span>✦</span><span class="kanji">ノーデックス物語</span><span>✦</span><span>2-YEAR WARRANTY</span><span>✦</span><span>30-DAY RETURNS</span><span>✦</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <a class="mast__logo" href="index.html" aria-label="NODEX home">NODEX<small>®</small></a>
+    <nav class="mast__nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="new-in.html">New In</a>
+      <a href="deals.html">Deals</a>
+      <a href="brands.html">Brands</a>
+      <!-- current page: not a link -->
+      <span class="is-current" aria-current="page">About</span>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <a href="bag.html" class="mast__bag" id="bagLink">Bag (<b data-bag-count>0</b>)</a>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html"><span>00</span>Home</a>
+    <a href="shop.html"><span>01</span>Shop</a>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <a href="deals.html"><span>03</span>Deals</a>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <span class="is-current" aria-current="page"><span>05</span>About</span>
+    <a href="contact.html"><span>06</span>Contact</a>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main>
+    <!-- =====================================================
+         COVER
+         ===================================================== -->
+    <section class="ab-cover" id="abCover">
+      <div class="ab-cover__glow" aria-hidden="true"></div>
+      <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <div class="ab-cover__copy">
+        <p class="ab-issue"><span class="ab-blue">NODEX STORIES</span><span>EST. 2026</span><span>MILANO</span></p>
+        <p class="ab-cover__kick">connecting you</p>
+        <h1 class="ab-cover__title" aria-label="Our story">
+          <span class="chrome" data-t="OUR">OUR</span>
+          <span class="chrome chrome--2" data-t="STORY">STORY</span>
+        </h1>
+        <p class="ab-cover__lead">NODEX started with a folder full of old ads, a scratched CD player and a phone that snapped shut like a shell. Today we sell the tech we grew up wanting, chosen with the heart of back then and checked like it’s brand new.</p>
+        <div class="ab-stats">
+          <span><b>2026</b>FOUNDED</span>
+          <span><b id="statItems">38</b>ITEMS LIVE</span>
+          <span><b>100%</b>TESTED</span>
+        </div>
+        <div class="ab-cover__ctas">
+          <button class="ab-btn ab-btn--blue" id="toStory">READ THE STORY ↓</button>
+          <a class="ab-btn" href="contact.html">SAY HELLO →</a>
+        </div>
+      </div>
+
+      <figure class="ab-cover__photo" id="coverPhoto">
+        <div class="disc" aria-hidden="true"></div>
+        <div class="ab-cover__model ph cut" data-img="img/about-hero.webp" data-label="about-hero"></div>
+        <div class="sms sms--cover" aria-hidden="true">
+          <p class="sms__head"><span>Msg (104)</span><span>12:04</span></p>
+          <p class="sms__txt">new stock landed!! 38 things, all tested ✦</p>
+        </div>
+      </figure>
+    </section>
+
+    <!-- =====================================================
+         THE STORY — an inbox, one message per chapter
+         ===================================================== -->
+    <section class="story" id="story">
+      <header class="story__head">
+        <p class="ab-sec__num">01</p>
+        <h2 class="ab-sec__title">THE STORY SO FAR</h2>
+        <p class="ab-sec__hand">told in text messages</p>
+        <p class="story__txt">Six messages, seven years: from a box in the attic to a shop that ships across Europe. Keep scrolling and the inbox fills up.</p>
+        <p class="story__count"><b id="msgCount">0</b> / 6 NEW MESSAGES</p>
+        <p class="ab-sec__jp kanji" aria-hidden="true">物語</p>
+      </header>
+
+      <div class="handset">
+        <div class="handset__top" aria-hidden="true"><span class="handset__speaker"></span></div>
+        <div class="lcd">
+          <div class="lcd__bar"><span>▮▮▮▮▯</span><span>INBOX</span><span id="lcdClock">12:00</span></div>
+          <ol class="inbox" id="inbox"></ol>
+          <div class="lcd__soft"><span>Options</span><span>Back</span></div>
+        </div>
+        <div class="handset__keys" aria-hidden="true">
+          <span></span><span class="handset__ok"></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         HOW WE WORK
+         ===================================================== -->
+    <section class="work" id="work">
+      <header class="ab-sec ab-sec--light">
+        <p class="ab-sec__num">02</p>
+        <div>
+          <h2 class="ab-sec__title">HOW WE WORK</h2>
+          <p class="ab-sec__hand">four steps, every single item</p>
+        </div>
+        <p class="ab-sec__jp kanji" aria-hidden="true">品質</p>
+      </header>
+      <ol class="steps" id="steps"></ol>
+    </section>
+
+    <!-- =====================================================
+         QUOTE + STUDIO PHOTO
+         ===================================================== -->
+    <section class="studio" id="studio">
+      <figure class="studio__photo">
+        <div class="ph" data-img="img/about-studio.webp" data-label="about-studio"></div>
+        <figcaption>THE STORE · MILANO · COME IN, PRESS EVERY BUTTON</figcaption>
+      </figure>
+      <blockquote class="studio__quote">
+        <p>“We sell the tech of today, chosen with the <span class="hl">heart of back then</span>.”</p>
+        <cite>— the NODEX team</cite>
+      </blockquote>
+    </section>
+
+    <!-- =====================================================
+         THE PROMISE
+         ===================================================== -->
+    <section class="promise" id="promise">
+      <header class="ab-sec">
+        <p class="ab-sec__num">03</p>
+        <div>
+          <h2 class="ab-sec__title">OUR PROMISE</h2>
+          <p class="ab-sec__hand">in writing, on every box</p>
+        </div>
+        <p class="ab-sec__jp kanji" aria-hidden="true">約束</p>
+      </header>
+      <div class="promise__grid" id="promiseGrid"></div>
+    </section>
+
+    <!-- =====================================================
+         SAY HELLO
+         ===================================================== -->
+    <section class="hello" id="hello">
+      <div class="hello__card">
+        <div class="hello__photo ph" data-img="img/about-flatlay.webp" data-label="about-flatlay"></div>
+        <div class="hello__copy">
+          <p class="ab-issue"><span class="ab-blue">SHOWROOM</span><span>MILANO, IT</span></p>
+          <h2 class="hello__title chrome" data-t="SAY HELLO">SAY HELLO</h2>
+          <p class="hello__txt">Want to see a Discman spin before you buy it, or ask if that flip phone still takes a SIM? Write to us: a real person answers, usually the same day.</p>
+          <div class="ab-cover__ctas">
+            <a class="ab-btn ab-btn--blue" href="contact.html">CONTACT US →</a>
+            <a class="ab-btn" href="shop.html">SHOP EVERYTHING →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <a href="shop.html">All products</a>
+        <a href="new-in.html">New In</a>
+        <a href="deals.html">Deals</a>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="index.html">Home</a>
+        <span class="is-current" aria-current="page">About</span>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · <span class="kanji">東京</span> · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/about.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "NODEX",
+  "short_name": "NODEX",
+  "icons": [
+    { "src": "img/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "start_url": "index.html",
+  "display": "browser",
+  "background_color": "#111114",
+  "theme_color": "#111114"
+}

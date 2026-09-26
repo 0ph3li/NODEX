@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>Deals — NODEX</title>
+  <meta name="description" content="NODEX Deals: time sale, deal of the day, bundle sets, lucky bags and coupon codes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bungee&family=Bungee+Shade&family=Permanent+Marker&family=Zen+Kaku+Gothic+New:wght@500;900&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/deals.css" />
+</head>
+<body class="deals-page">
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>TIME SALE NOW ON</span><span>★</span><span>UP TO -30%</span><span>★</span><span class="kanji">激安タイムセール</span><span>★</span><span>FREE SHIPPING OVER €49</span><span>★</span><span>LUCKY BAGS ARE BACK</span><span>★</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <a class="mast__logo" href="index.html" aria-label="NODEX home">NODEX<small>®</small></a>
+    <nav class="mast__nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="new-in.html">New In</a>
+      <!-- current page: not a link -->
+      <span class="is-current" aria-current="page">Deals</span>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <a href="bag.html" class="mast__bag" id="bagLink">Bag (<b data-bag-count>0</b>)</a>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html"><span>00</span>Home</a>
+    <a href="shop.html"><span>01</span>Shop</a>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <span class="is-current" aria-current="page"><span>03</span>Deals</span>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <a href="about.html"><span>05</span>About</a>
+    <a href="contact.html"><span>06</span>Contact</a>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main>
+    <!-- =====================================================
+         FLYER HEAD
+         ===================================================== -->
+    <section class="fl-head" id="flHead">
+      <div class="fl-head__rays" aria-hidden="true"></div>
+
+      <div class="fl-head__copy">
+        <p class="fl-head__top"><span>NODEX</span><span>WEEKLY FLYER · No.09</span><span class="kanji">特価</span></p>
+        <h1 class="fl-head__title" aria-label="Deals">
+          <span class="fl-head__word" data-t="DEALS">DEALS</span>
+        </h1>
+        <p class="fl-head__marker">everything must go!!</p>
+        <p class="fl-head__lead">Retro consoles, flip phones, boomboxes and camcorders at prices from another decade. When the timer hits zero, the time sale resets.</p>
+
+        <div class="timesale">
+          <p class="timesale__label"><b>TIME SALE</b><span class="kanji">タイムセール</span> ENDS IN</p>
+          <div class="timesale__digits" id="saleClock"><b>00</b><i>:</i><b>00</b><i>:</i><b>00</b></div>
+        </div>
+      </div>
+
+      <figure class="fl-head__photo">
+        <div class="torn">
+          <div class="ph" data-img="img/deals-hero.webp" data-label="deals-hero"></div>
+        </div>
+        <span class="burst burst--big" aria-hidden="true"><span>UP TO<b>-30%</b></span></span>
+        <span class="tape tape--1" aria-hidden="true"></span>
+        <span class="tape tape--2" aria-hidden="true"></span>
+      </figure>
+    </section>
+
+    <!-- =====================================================
+         DEAL OF THE DAY
+         ===================================================== -->
+    <section class="dotd" id="dotd"></section>
+
+    <!-- =====================================================
+         SALE PRICE TAGS
+         ===================================================== -->
+    <section class="sale" id="sale">
+      <header class="fl-sec">
+        <p class="fl-sec__num">01</p>
+        <div>
+          <h2 class="fl-sec__title">PRICE CUTS</h2>
+          <p class="fl-sec__marker">slashed. for real.</p>
+        </div>
+        <p class="fl-sec__jp kanji" aria-hidden="true">値下げ</p>
+      </header>
+
+      <div class="sale__bar">
+        <div class="chips" id="saleChips" role="tablist" aria-label="Filter deals"></div>
+        <label class="sort">
+          <span>SORT</span>
+          <select id="saleSort">
+            <option value="save">Biggest saving</option>
+            <option value="low">Price: low → high</option>
+            <option value="high">Price: high → low</option>
+          </select>
+        </label>
+      </div>
+      <div class="tags" id="saleGrid"></div>
+    </section>
+
+    <!-- =====================================================
+         BUNDLE SETS
+         ===================================================== -->
+    <section class="sets" id="sets">
+      <header class="fl-sec fl-sec--light">
+        <p class="fl-sec__num">02</p>
+        <div>
+          <h2 class="fl-sec__title">SET DEALS</h2>
+          <p class="fl-sec__marker">buy together, pay less</p>
+        </div>
+        <p class="fl-sec__jp kanji" aria-hidden="true">セット割</p>
+      </header>
+      <div class="sets__banner">
+        <div class="sets__banner-photo"><div class="ph" data-img="img/deals-banner.webp" data-label="deals-banner"></div><span class="tape tape--3" aria-hidden="true"></span></div>
+        <div class="sets__banner-copy">
+          <p class="sets__banner-txt">SHARE THE <b>DEAL</b></p>
+          <p class="sets__banner-marker">sets for you + your bestie</p>
+          <p class="sets__banner-lead">Two phones, one set price. A console with its case and charms. Everything you’d buy together anyway — for less.</p>
+          <span class="sets__banner-burst" aria-hidden="true">SAVE<b>UP TO 18%</b></span>
+        </div>
+      </div>
+      <div class="sets__grid" id="setGrid"></div>
+    </section>
+
+    <!-- =====================================================
+         LUCKY BAGS
+         ===================================================== -->
+    <section class="lucky" id="lucky">
+      <header class="fl-sec">
+        <p class="fl-sec__num">03</p>
+        <div>
+          <h2 class="fl-sec__title">LUCKY BAGS</h2>
+          <p class="fl-sec__marker">what’s inside? nobody knows!!</p>
+        </div>
+        <p class="fl-sec__jp kanji" aria-hidden="true">福袋</p>
+      </header>
+      <p class="lucky__intro">A Japanese new-year classic, all year round: a sealed bag of gadgets and accessories, always worth more than you pay. Shake one to see what it <em>could</em> hold.</p>
+      <div class="lucky__row" id="luckyRow"></div>
+    </section>
+
+    <!-- =====================================================
+         COUPONS
+         ===================================================== -->
+    <section class="coupons" id="coupons">
+      <header class="fl-sec fl-sec--light">
+        <p class="fl-sec__num">04</p>
+        <div>
+          <h2 class="fl-sec__title">CUT &amp; SAVE</h2>
+          <p class="fl-sec__marker">tap a coupon to copy the code</p>
+        </div>
+        <p class="fl-sec__jp kanji" aria-hidden="true">クーポン</p>
+      </header>
+      <div class="coupons__row" id="couponRow"></div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <a href="shop.html">All products</a>
+        <a href="new-in.html">New In</a>
+        <span class="is-current" aria-current="page">Deals</span>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · <span class="kanji">東京</span> · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/deals.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

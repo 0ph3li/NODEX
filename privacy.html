@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>Privacy — NODEX</title>
+  <meta name="description" content="How NODEX handles your data: no cookies, no tracking, and a bag that lives only in your browser." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Zen+Kaku+Gothic+New:wght@500;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/help.css" />
+</head>
+<body class="hp-page hp--privacy">
+  <!-- Template text: have it reviewed by a legal professional and fill in the company details before launch. -->
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>NO COOKIES</span><span>▲</span><span>NO TRACKING</span><span>▲</span><span class="kanji">プライバシー</span><span>▲</span><span>YOUR BAG STAYS ON YOUR DEVICE</span><span>▲</span><span>GDPR</span><span>▲</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <a class="mast__logo" href="index.html" aria-label="NODEX home">NODEX<small>®</small></a>
+    <nav class="mast__nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="new-in.html">New In</a>
+      <a href="deals.html">Deals</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <a href="bag.html" class="mast__bag" id="bagLink">Bag (<b data-bag-count>0</b>)</a>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html"><span>00</span>Home</a>
+    <a href="shop.html"><span>01</span>Shop</a>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <a href="deals.html"><span>03</span>Deals</a>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <a href="about.html"><span>05</span>About</a>
+    <a href="contact.html"><span>06</span>Contact</a>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main>
+    <!-- =====================================================
+         COVER — owner's manual
+         ===================================================== -->
+    <section class="hp-cover" id="hpCover">
+      <div class="hp-cover__bg" aria-hidden="true"></div>
+
+      <div class="hp-cover__copy">
+        <p class="hp-issue"><span class="hp-acc">HELP DESK</span><span>SECTION 04</span><span>UPDATED SEPT 2026</span></p>
+        <p class="hp-cover__kick"><b aria-hidden="true">!</b>YOUR DATA</p>
+        <h1 class="hp-cover__title" aria-label="Privacy">PRI<em>VACY</em></h1>
+        <p class="hp-cover__lead">What we know about you (not much), what your browser keeps for you, and how to wipe it with one click.</p>
+        <div class="hp-stats">
+          <span><b>0</b>COOKIES</span>
+          <span><b>0</b>TRACKERS</span>
+          <span><b>1</b>CLICK TO CLEAR</span>
+        </div>
+        <div class="hp-cover__ctas">
+          <button class="hp-btn hp-btn--acc" id="toManual">READ THE POLICY ↓</button>
+          <a class="hp-btn" href="#device">CLEAR MY DATA →</a>
+        </div>
+      </div>
+
+      <figure class="hp-cover__art" id="coverArt">
+        <div class="booklet">
+          <div class="booklet__top"><span class="booklet__brand">NODEX<small>®</small></span><span>OWNER’S<br />MANUAL</span></div>
+          <p class="booklet__band">DATA & PRIVACY</p>
+          <div class="booklet__fig">
+            <img src="img/clear-keyboard.webp" alt="" />
+              <span class="callout callout--l" style="top:20%"><b>1</b>LOCAL</span>
+              <span class="callout callout--r" style="top:50%"><b>2</b>PRIVATE</span>
+              <span class="callout callout--l" style="top:78%"><b>3</b>YOURS</span>
+          </div>
+          <p class="booklet__foot"><span>MODEL NX-PRV</span><span>SECTION 04</span></p>
+        </div>
+        <span class="hp-cover__sticker" aria-hidden="true">NO<br />COOKIES</span>
+      </figure>
+    </section>
+
+    <nav class="desk-tabs" aria-label="Help pages">
+      <a href="faq.html">FAQ</a>
+      <a href="shipping.html">SHIPPING</a>
+      <a href="returns.html">RETURNS</a>
+      <span class="is-current" aria-current="page">PRIVACY</span>
+      <a href="terms.html">TERMS</a>
+      <a href="contact.html">CONTACT →</a>
+    </nav>
+
+    <!-- =====================================================
+         MANUAL
+         ===================================================== -->
+    <div class="manual" id="manual">
+      <nav class="mtoc" aria-label="Contents">
+        <p class="mtoc__title">CONTENTS</p>
+        <ol id="toc"></ol>
+      </nav>
+      <article class="manual__body">
+        <section class="chapter" id="short" data-toc="The short version">
+          <p class="chapter__no">CHAPTER 01</p>
+          <h2>The short version</h2>
+          <ul>
+            <li>No cookies, no analytics, no tracking pixels, no ads.</li>
+            <li>Your bag, discount code, recent searches and message drafts are saved <b>only in your browser</b>, on your device.</li>
+            <li>Fonts and animation scripts are loaded from Google Fonts and cdnjs, which see your IP address.</li>
+            <li>When you order or write to us, we use your details only to deliver your order and answer you.</li>
+          </ul>
+
+        </section>
+        <section class="chapter" id="who" data-toc="Who we are">
+          <p class="chapter__no">CHAPTER 02</p>
+          <h2>Who we are</h2>
+          <p>NODEX Electronics is responsible for the personal data described on this page. You can reach us any time through the <a href="contact.html">contact page</a>.</p>
+          <p>[Company legal name, VAT number and registered address to be added before launch.]</p>
+
+        </section>
+        <section class="chapter" id="device" data-toc="What this website keeps on your device">
+          <p class="chapter__no">CHAPTER 03</p>
+          <h2>What this website keeps on your device</h2>
+          <p>To work without an account, the site saves a few things in your browser’s local storage. They never leave your device and we can’t see them.</p>
+          <div class="datatool" id="dataTool">
+            <ul id="dataList"></ul>
+            <button class="hp-btn hp-btn--acc" id="dataClear" type="button">CLEAR NODEX DATA ON THIS DEVICE</button>
+            <p class="datatool__msg" id="dataMsg" role="status"></p>
+          </div>
+
+        </section>
+        <section class="chapter" id="third" data-toc="Third-party services">
+          <p class="chapter__no">CHAPTER 04</p>
+          <h2>Third-party services</h2>
+          <p>To show our typefaces and run the page animations, your browser downloads files from:</p>
+          <ul>
+            <li><b>Google Fonts</b> (fonts.googleapis.com, fonts.gstatic.com), operated by Google.</li>
+            <li><b>cdnjs</b> (cdnjs.cloudflare.com), operated by Cloudflare.</li>
+          </ul>
+          <p>Like any website you visit, these services receive your IP address and basic browser information to deliver the files. We don’t send them anything else.</p>
+
+        </section>
+        <section class="chapter" id="orders" data-toc="When you order or write to us">
+          <p class="chapter__no">CHAPTER 05</p>
+          <h2>When you order or write to us</h2>
+          <p>We use your name, email, delivery address, phone number (if you give it) and order details to process your order, deliver it, handle returns and warranty, and answer your messages. The legal basis is the contract between us and, for invoices, our legal obligations.</p>
+          <p>We share delivery details only with the courier and payment details only with the payment provider. We keep order records for as long as tax law requires, and messages for as long as needed to help you.</p>
+
+        </section>
+        <section class="chapter" id="rights" data-toc="Your rights">
+          <p class="chapter__no">CHAPTER 06</p>
+          <h2>Your rights</h2>
+          <p>Under the GDPR you can ask to see the data we hold about you, correct it, delete it, receive a copy, or object to how we use it. Just <a href="contact.html">write to us</a>.</p>
+          <p>You can also lodge a complaint with the Italian data protection authority (Garante per la protezione dei dati personali).</p>
+
+        </section>
+        <section class="chapter" id="changes" data-toc="Changes to this page">
+          <p class="chapter__no">CHAPTER 07</p>
+          <h2>Changes to this page</h2>
+          <p>If we change how we handle data, we’ll update this page and the date at the top. Last updated: September 2026.</p>
+
+        </section>
+
+        <aside class="stuck">
+          <p>Still stuck?<small>A real person answers within 24 hours, Monday to Saturday.</small></p>
+          <a class="hp-btn" href="contact.html">WRITE TO US →</a>
+        </aside>
+      </article>
+    </div>
+  </main>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <a href="shop.html">All products</a>
+        <a href="new-in.html">New In</a>
+        <a href="deals.html">Deals</a>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <span class="is-current" aria-current="page">Privacy</span>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · <span class="kanji">東京</span> · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/help.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

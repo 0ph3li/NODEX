@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>NODEX — The Mobile Store to Connect with the Future</title>
+  <meta name="description" content="NODEX Electronics. Audio, mobile, gaming, cameras and gadgets. The future is now." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Serif:ital@0;1&family=Michroma&family=Zen+Dots&family=Yellowtail&family=Zen+Kaku+Gothic+New:wght@500;900&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ PRINT INTRO ============ -->
+  <div class="press" id="press" aria-hidden="true">
+    <div class="press__marks"><i></i><i></i><i></i><i></i></div>
+    <div class="press__bars"><span style="--c:#00a3e0"></span><span style="--c:#e6007e"></span><span style="--c:#ffe600"></span><span style="--c:#111"></span><span style="--c:#1f3cff"></span><span style="--c:#c8ccd2"></span></div>
+    <p class="press__txt">NODEX MAGAZINE — VOL.01 — <span id="pressPct">000</span>%</p>
+  </div>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>FREE SHIPPING OVER €49</span><span>✦</span><span>2-YEAR WARRANTY</span><span>✦</span><span>30-DAY RETURNS</span><span>✦</span><span>CONNECT WITH THE FUTURE</span><span>✦</span><span class="kanji">未来へつながる</span><span>✦</span><span>PAY IN 3</span><span>✦</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <!-- Logo NOT a link: we are on the home page -->
+    <div class="mast__logo">NODEX<small>®</small></div>
+    <nav class="mast__nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="new-in.html">New In</a>
+      <a href="deals.html">Deals</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <a href="bag.html" class="mast__bag" id="bagLink">Bag (<b id="bagCount" data-bag-count>0</b>)</a>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="shop.html"><span>01</span>Shop</a>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <a href="deals.html"><span>03</span>Deals</a>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <a href="about.html"><span>05</span>About</a>
+    <a href="contact.html"><span>06</span>Contact</a>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main id="mag">
+
+    <!-- =====================================================
+         P.001 — COVER
+         ===================================================== -->
+    <section class="page cover" id="cover">
+      <div class="cover__photo"></div>
+      <div class="cover__shade"></div>
+      <div class="dots"></div>
+
+      <div class="cover__top">
+        <span>No.<b>001</b></span>
+        <span class="jp kanji">未来へつながるテクノロジー・マガジン</span>
+        <span>SEPT 2026 — €7.80</span>
+      </div>
+
+      <h1 class="cover__mast" aria-label="NODEX">
+        <span class="mis" data-t="NODEX">NODEX</span>
+      </h1>
+      <p class="cover__sub">THE ELECTRONICS MAGAZINE YOU CAN SHOP</p>
+      <img class="cover__model" src="img/cover-model.webp" alt="Cover model with headphones and CDs" />
+
+      <div class="cover__lines cover__lines--l">
+        <p class="cl cl--big"><span>The Future</span><span>is Now.</span></p>
+        <p class="cl"><b>Pocket Disc:</b> the CD is back — and it’s wireless <i>p.006</i></p>
+        <p class="cl"><b class="hl">PRESS START</b> PSP, Wii &amp; DS are back <i>p.005</i></p>
+      </div>
+      <div class="cover__lines cover__lines--r">
+        <p class="cl"><small>SPECIAL</small><b class="big2">FLIP<br/>PHONES</b>are having a moment <i>p.003</i></p>
+        <p class="cl"><b class="blue">360° VIEW</b> inside the NX-J5 <i>p.007</i></p>
+        <p class="cl"><em>“u on mute”</em> — the headphones edit <i>p.004</i></p>
+      </div>
+
+      <div class="burst"><span>FREE<br/>SHIPPING<br/><b>€49+</b></span></div>
+
+      <div class="cover__bottom">
+        <a class="cover__cta" href="shop.html">Shop the issue <span>→</span></a>
+        <div class="barcode-box"><div class="barcode"></div><span>4 902026 090019</span></div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         P.002 — CONTENTS (categories)
+         ===================================================== -->
+    <section class="page contents" id="contents">
+      <div class="contents__head">
+        <h2 class="contents__title">CONTENTS</h2>
+        <div class="contents__meta"><span class="jp kanji">目次</span><span>VOL.01 / SEPT 2026</span></div>
+      </div>
+
+      <div class="contents__grid">
+        <ol class="toc" id="toc">
+          <li><a href="shop.html?cat=audio" data-prev="0"><span class="toc__p">012</span><span class="toc__t">Audio</span><span class="toc__d">Headphones, players, speakers</span><span class="toc__jp">Sound</span></a></li>
+          <li><a href="shop.html?cat=mobile" data-prev="1"><span class="toc__p">024</span><span class="toc__t">Mobile</span><span class="toc__d">Smartphones, flips, cases</span><span class="toc__jp">Talk</span></a></li>
+          <li><a href="shop.html?cat=gaming" data-prev="2"><span class="toc__p">036</span><span class="toc__t">Gaming</span><span class="toc__d">Consoles, handhelds, pads</span><span class="toc__jp">Play</span></a></li>
+          <li><a href="shop.html?cat=computers" data-prev="3"><span class="toc__p">048</span><span class="toc__t">Computers</span><span class="toc__d">Laptops, tablets, keyboards</span><span class="toc__jp">Work</span></a></li>
+          <li><a href="shop.html?cat=cameras" data-prev="4"><span class="toc__p">060</span><span class="toc__t">Cameras</span><span class="toc__d">Digicams, instant, lenses</span><span class="toc__jp">Snap</span></a></li>
+          <li><a href="shop.html?cat=accessories" data-prev="5"><span class="toc__p">072</span><span class="toc__t">Accessories</span><span class="toc__d">Charms, cables, pouches</span><span class="toc__jp">Style</span></a></li>
+        </ol>
+
+        <aside class="letter">
+          <p class="letter__kicker">EDITOR’S LETTER</p>
+          <div class="letter__img ph" data-img="img/editor.webp" data-label="editor — small photo 4:5"></div>
+          <p class="letter__txt"><span class="dropcap">R</span>emember when a phone could fold, a CD player could skip, and every gadget came with a poster? We do. NODEX is a store for today’s best tech, picked with the eye of a 2002 magazine. Turn the page.</p>
+          <p class="letter__sign">the Nodex team</p>
+        </aside>
+      </div>
+
+      <!-- hover preview (follows cursor) -->
+      <div class="toc-prev" id="tocPrev" aria-hidden="true">
+        <div class="ph" data-img="img/cat-audio.webp" data-label="cat-audio"></div>
+        <div class="ph" data-img="img/cat-mobile.webp" data-label="cat-mobile"></div>
+        <div class="ph" data-img="img/cat-gaming.webp" data-label="cat-gaming"></div>
+        <div class="ph" data-img="img/cat-computers.webp" data-label="cat-computers"></div>
+        <div class="ph" data-img="img/cat-cameras.webp" data-label="cat-cameras"></div>
+        <div class="ph" data-img="img/cat-accessories.webp" data-label="cat-accessories"></div>
+      </div>
+      <div class="folio"><span>NODEX MAGAZINE</span><span>SEPT 2026</span><span>002</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.003 — AD: "An eye for the moment" (mobile)
+         ===================================================== -->
+    <section class="page ad-eye" id="adEye">
+      <div class="ad-eye__photo ph" data-img="img/mobile-model.webp" data-label="mobile-model — tall photo, model winking / close-up"></div>
+      <p class="ad-eye__caption">An eye for the moment.</p>
+
+      <div class="ad-eye__logo">NODEX</div>
+
+      <div class="ad-eye__phones">
+        <div class="ph cut ph--phone" data-img="img/mobile-phone-1.webp" data-label="mobile-phone-1 — product cut-out PNG"></div>
+        <div class="ph cut ph--phone" data-img="img/mobile-phone-2.webp" data-label="mobile-phone-2 — product cut-out PNG"></div>
+      </div>
+
+      <div class="ad-eye__num" aria-hidden="true"><span>NX72</span></div>
+
+      <div class="ad-eye__copy">
+        <p>The NODEX NX-72 is notable for its unconventional design, striking colours and a camera that actually gets you. Swappable candy covers included.</p>
+        <a class="adlink" href="shop.html?cat=mobile">Shop Mobile →</a>
+      </div>
+      <div class="folio"><span>NODEX MAGAZINE</span><span>MOBILE</span><span>003</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.004 — AD: yellow "NODEX 2000" (audio)
+         ===================================================== -->
+    <section class="page ad-yel" id="adYel">
+      <div class="ad-yel__col">
+        <div class="pan pan--1">
+          <span class="tagbox">hear<b>.</b>believe</span>
+          <div class="ph" data-img="img/audio-eye.webp" data-label="audio-eye — eye close-up"></div>
+        </div>
+        <div class="pan pan--2">
+          <p class="pan__brand">NODEX</p>
+          <p class="jp">Stereo Headphones</p>
+          <p class="pan__model">NX-H101</p>
+          <div class="ph cut" data-img="img/audio-headphones.webp" data-label="audio-headphones — cut-out PNG"></div>
+          <p class="pan__small">Unplug from the noise with these vintage-tuned on-ear headphones. 40mm drivers. Real sound.</p>
+        </div>
+        <div class="pan pan--3">
+          <div class="ph" data-img="img/audio-landscape.webp" data-label="audio-landscape"></div>
+          <p class="jp kanji">サウンドを解き放て。</p>
+        </div>
+        <div class="pan pan--4"><b>HEAR THE<br/>DIFFERENCE</b></div>
+      </div>
+
+      <div class="ad-yel__main ph" data-img="img/audio-model.webp" data-label="audio-model — model with headphones, yellow background"></div>
+
+      <div class="ad-yel__tr">
+        <p class="jp kanji">音楽。ゲーム。写真。<br/>すべてひとつに。</p>
+        <p>The future is now.<br/>Music. Games. Photos.<br/>Everything connected.</p>
+        <div class="barcode barcode--mini"></div>
+      </div>
+
+      <h2 class="ad-yel__title"><span>NODEX</span> <span>AUDIO</span></h2>
+
+      <div class="ad-yel__box">
+        <div class="ph" data-img="img/audio-product.webp" data-label="audio-product"></div>
+        <p>A portable sound system for your commute, your room, your whole mood. Plays everything you love — louder.</p>
+        <a class="adlink" href="shop.html?cat=audio">Shop Audio →</a>
+      </div>
+      <div class="folio folio--dark"><span>NODEX MAGAZINE</span><span>AUDIO</span><span>004</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.005 — AD: PLAY (consoles) — "The Sims 2" style
+         ===================================================== -->
+    <section class="page ad-play" id="adPlay">
+      <!-- left: Sims-style photo with interaction bubbles on the model -->
+      <div class="play__left">
+        <div class="play__photo ph" data-img="img/gaming-model.webp" data-label="gaming-model"></div>
+        <div class="play__logo"><span>the</span><b>NODEX</b><i>PLAY</i></div>
+        <div class="play__sign kanji" aria-hidden="true">ゲームセンター</div>
+        <div class="gem" aria-hidden="true"><i></i></div>
+        <div class="bubs">
+          <button class="bub bub--1" data-act="specs"><i>✦</i>Specs…</button>
+          <button class="bub bub--2" data-act="bag"><i>♥</i>Add to bag</button>
+          <button class="bub bub--3" data-act="next"><i>▶</i>Next…</button>
+          <a class="bub bub--4" href="shop.html?cat=gaming"><i>☺</i>See all…</a>
+        </div>
+        <div class="play__legal">
+          <div class="play__rating"><b>T</b><span>TESTED</span><small>12-MONTH WARRANTY</small></div>
+          <div class="play__stack"><b>RETRO</b><span>CONSOLES</span><small>CLEANED · CHECKED</small></div>
+        </div>
+      </div>
+
+      <!-- right: the console on its turntable -->
+      <div class="play__right">
+        <div class="play__top">
+          <p class="play__kick">PRESS START<span>Retro consoles, tested &amp; ready</span></p>
+          <div class="play__count">
+            <button class="play__arrow" id="playPrev" aria-label="Previous console">◀</button>
+            <b id="pcNum">01</b><span>/ 06</span>
+            <button class="play__arrow" id="playNext" aria-label="Next console">▶</button>
+          </div>
+        </div>
+
+        <div class="play__hero">
+          <p class="play__ghost" id="pcGhost" aria-hidden="true">PSP 3000</p>
+          <div class="play__turn" aria-hidden="true"><i></i></div>
+          <div class="play__stage" id="playStage"></div>
+          <div class="play__card" id="playCard">
+            <p class="play__maker" id="pcMaker"></p>
+            <h2 class="play__name" id="pcName"></h2>
+            <ul class="play__specs" id="pcSpecs"></ul>
+            <p class="play__price"><span id="pcPrice"></span><small>refurbished · tested</small></p>
+          </div>
+        </div>
+
+        <div class="play__shelf" id="playThumbs"></div>
+        <p class="play__caption">Every console is cleaned, tested and shipped with a 12-month warranty. Press start like it’s 2006.</p>
+      </div>
+      <div class="folio folio--light"><span>NODEX MAGAZINE</span><span>GAMING</span><span>005</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.006 — AD: Pocket Disc spec sheet (drop of the month)
+         ===================================================== -->
+    <section class="page ad-disc" id="adDisc">
+      <div class="disc__photo ph" data-img="img/disc-model.webp" data-label="disc-model — model holding the player, wearing headphones"></div>
+      <div class="disc__fade"></div>
+
+      <div class="disc__head">
+        <div>
+          <p class="disc__brand">NODEX</p>
+          <p class="jp">The new compact innovation of 2026</p>
+        </div>
+        <div class="disc__date"><b>2026.09</b><span>NEW</span></div>
+      </div>
+
+      <div class="disc__title">
+        <h2 class="y2k" data-t="POCKETDISC">POCKETDISC</h2>
+        <p class="disc__walk">NODEX PLAYER <span aria-hidden="true">NODEX PLAYER</span></p>
+        <p class="disc__script">music play</p>
+      </div>
+
+      <div class="disc__side">
+        <p class="disc__handle">nodex.magazine</p>
+        <p class="jp small">The best CD player of 2026. New options, easier controls and a whole new way to listen — wherever you go.</p>
+      </div>
+
+      <div class="disc__circle">
+        <svg viewBox="0 0 200 200" class="disc__ring"><defs><path id="ring" d="M100,100 m-92,0 a92,92 0 1,1 184,0 a92,92 0 1,1 -184,0"/></defs><text><textPath href="#ring" textLength="570">compact, convenient, easy to play ✦ compact, convenient, easy to play ✦</textPath></text></svg>
+        <div class="ph round" data-img="img/disc-small.webp" data-label="disc-small — round crop"></div>
+      </div>
+
+      <div class="disc__bottom">
+        <div class="disc__prod">
+          <p class="disc__model"><span>NODEX Player</span> <b>NDX-751</b></p>
+          <div class="disc__prodimg" id="discProd">
+            <div class="cd-fallback"><i></i></div>
+            <div class="ph cut" data-img="img/disc-product.webp" data-label="disc-product — cut-out PNG"></div>
+          </div>
+          <p class="disc__batt">2 AA batteries or USB-C<br/>40h playback<br/>198 g (without batteries)</p>
+        </div>
+
+        <table class="spec">
+          <thead><tr><th>Specification</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Model</td><td>NODEX Player NDX-751</td></tr>
+            <tr><td>Type</td><td>Portable CD player + Bluetooth</td></tr>
+            <tr><td>Supported formats</td><td>CD, CD-R, CD-RW, MP3</td></tr>
+            <tr><td>Jump protection</td><td>G-Shield 40s (anti-skip)</td></tr>
+            <tr><td>Screen</td><td>Monochrome backlit LCD</td></tr>
+            <tr><td>Colour</td><td id="discColor">Sakura Pink</td></tr>
+          </tbody>
+        </table>
+
+        <div class="disc__buy">
+          <p class="disc__claim">High-fidelity digital sound, anti-skip technology and Bluetooth for your wireless headphones.</p>
+          <div class="swatches" role="radiogroup" aria-label="Colour">
+            <button class="sw is-on" style="--sw:#f7b8d2" data-name="Sakura Pink" data-flt="none"><i></i><span>PINK</span></button>
+            <button class="sw" style="--sw:#c3cad3" data-name="Silver" data-flt="saturate(0) brightness(1.06)"><i></i><span>SILVER</span></button>
+            <button class="sw" style="--sw:#6f9dff" data-name="Ice Blue" data-flt="hue-rotate(235deg) saturate(1.2)"><i></i><span>BLUE</span></button>
+            <button class="sw" style="--sw:#1b1b1f" data-name="Black" data-flt="grayscale(1) brightness(.42) contrast(1.25)"><i></i><span>BLACK</span></button>
+          </div>
+          <div class="disc__price">
+            <p class="price">€149<sup>.90</sup></p>
+            <button class="btn-print" id="addBag">ADD TO BAG</button>
+          </div>
+        </div>
+      </div>
+      <div class="folio"><span>NODEX MAGAZINE</span><span>DROP OF THE MONTH</span><span>006</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.007 — AD: NX-J5 360° VIEW
+         ===================================================== -->
+    <section class="page ad-j5" id="adJ5">
+      <div class="j5__bg"></div>
+      <div class="j5__model ph" data-img="img/j5-model.webp" data-label="j5-model — model on the phone, silver/blue mood"></div>
+
+      <div class="j5__head">
+        <p class="j5__brand">NODEX</p>
+        <p class="jp">Hello, future.</p>
+        <p class="j5__tag">The Mobile to Connect with the Future.</p>
+      </div>
+      <div class="j5__new"><b>NEW</b><span>2026.09</span></div>
+
+      <h2 class="j5__name" data-t="NX-J5">NX-J5</h2>
+      <p class="j5__sys">Mobile Communications System</p>
+
+      <div class="j5__stage">
+        <div class="j5__views" id="j5Stage">
+          <div class="ph cut is-on" data-img="img/j5-1.webp" data-label="front"></div>
+          <div class="ph cut" data-img="img/j5-2.webp" data-label="back"></div>
+          <div class="ph cut" data-img="img/j5-3.webp" data-label="side"></div>
+          <div class="ph cut" data-img="img/j5-4.webp" data-label="open"></div>
+        </div>
+        <div class="j5__bubble"><span class="jp">Thin is<br/>in.</span><span>Stylish &amp; Slim Design</span><b>11mm</b></div>
+      </div>
+
+      <div class="j5__jp">
+        <p class="j5__jphead">More fun, everywhere you go.</p>
+        <p class="jp small">Mail, calls and the whole internet.<br/>The future of talking, in the palm of your hand.</p>
+      </div>
+
+      <div class="j5__icons" aria-hidden="true"><i>✉</i><i>◎</i><i>31</i><i>☏</i><i>♫</i><i>◉</i></div>
+
+      <div class="j5__row">
+        <div class="j5__360">
+          <p class="j5__label">360° VIEW</p>
+          <div class="j5__thumbs" id="j5Thumbs">
+            <button class="is-on" data-i="0"><span class="ph cut" data-img="img/j5-1.webp" data-label="front"></span><small>FRONT</small></button>
+            <button data-i="1"><span class="ph cut" data-img="img/j5-2.webp" data-label="back"></span><small>BACK</small></button>
+            <button data-i="2"><span class="ph cut" data-img="img/j5-3.webp" data-label="side"></span><small>SIDE</small></button>
+            <button data-i="3"><span class="ph cut" data-img="img/j5-4.webp" data-label="open"></span><small>OPEN</small></button>
+          </div>
+        </div>
+        <div class="j5__colors">
+          <p class="j5__label j5__label--sm">COLOR VARIATION</p>
+          <div class="j5__cv">
+            <span><i style="--c:#f3e9d6"></i>Vanilla<small>Cream</small></span>
+            <span><i style="--c:#e8b4ae"></i>Rose<small>Pink</small></span>
+            <span><i style="--c:#d6dbe3"></i>Pearl<small>Silver</small></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="j5__feat">
+        <div class="j5__featbox">
+          <div><p class="j5__fh">In the Box</p><ul class="jp"><li>NX-J5 handset</li><li>USB-C cable</li><li>Candy cover set</li><li>Phone charm</li></ul></div>
+          <div><p class="j5__fh">Key Features</p><ul><li>E-mail Function</li><li>Internet Access</li><li>5G + Wi-Fi 7</li><li>2-day Battery</li><li>Compact &amp; Lightweight Design</li></ul></div>
+        </div>
+        <p class="j5__connected">BE CONNECTED.</p>
+        <a class="adlink adlink--blue" href="shop.html?cat=mobile">Discover NX-J5 →</a>
+      </div>
+      <div class="folio"><span>NODEX MAGAZINE</span><span>TECHNICAL SPECIFICATIONS</span><span>007</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.008 — AD: lilac "Blooming & Growing" (new in)
+         ===================================================== -->
+    <section class="page ad-lilac" id="adLilac">
+      <div class="lilac__photo ph" data-img="img/newin-model.webp" data-label="newin-model — model, long hair, lilac background"></div>
+      <p class="lilac__kanji kanji" aria-hidden="true">花が咲く瞬間</p>
+      <div class="lilac__inset ph" data-img="img/newin-small.webp" data-label="newin-small"></div>
+
+      <div class="lilac__col">
+        <div class="lilac__logo">NODEX<span>NX-7250</span></div>
+        <p>A beauty for the moment.<br/>Nothing left but the scent of a flower.<br/>Majestic, bold &amp; refreshing.</p>
+        <p>The new colours of the season,<br/>lilac, chrome &amp; candy pink.</p>
+        <p>Feel the vibe that captures<br/>every moment.</p>
+        <p class="lilac__bloom">Blooming &amp; Growing.</p>
+        <a class="adlink" href="new-in.html">Shop New In →</a>
+      </div>
+
+      <div class="lilac__prod ph cut" data-img="img/newin-product.webp" data-label="newin-product — cut-out PNG"></div>
+      <div class="lilac__foot">
+        <span class="lilac__sig">Nodex</span>
+        <span class="lilac__brand">NODEX<small>CONNECTING YOU</small></span>
+      </div>
+      <div class="folio folio--light"><span>NODEX MAGAZINE</span><span>NEW IN</span><span>008</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.009 — AD: split blue (about)
+         ===================================================== -->
+    <section class="page ad-split" id="adSplit">
+      <div class="split__l">
+        <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="split__logo"><b>NODEX</b><span>Connecting you</span></div>
+        <div class="split__photo ph cut" data-img="img/about-model.webp" data-label="about-model — model crouching, on the phone"></div>
+      </div>
+      <div class="split__r">
+        <p class="split__vert">Since 2026</p>
+        <div class="split__top ph cut" data-img="img/about-small-1.webp" data-label="about-small-1"></div>
+        <h2 class="split__title">NODEX<span>Stories</span><small class="kanji">ノーデックス物語</small></h2>
+        <p class="split__txt">NODEX was born from a folder full of old ads, scratched CD players and phones that snapped shut like a shell. We sell the tech of today, chosen with the heart of back then — every product tested, every order packed like a gift.</p>
+        <a class="adlink adlink--light" href="about.html">Read our story →</a>
+        <div class="split__bot ph cut" data-img="img/about-small-2.webp" data-label="about-small-2 — products pair"></div>
+      </div>
+      <div class="folio folio--light"><span>NODEX MAGAZINE</span><span>ABOUT</span><span>009</span></div>
+    </section>
+
+    <!-- =====================================================
+         P.010 — COUPON (newsletter)
+         ===================================================== -->
+    <section class="page coupon" id="coupon">
+      <div class="coupon__card" id="couponCard">
+        <span class="coupon__scissors" aria-hidden="true">✂</span>
+        <span class="coupon__cutline kanji" aria-hidden="true">✂ 切り取り線 — CUT HERE</span>
+        <div class="coupon__l">
+          <p class="coupon__clip">CLIP &amp; SAVE</p>
+          <p class="coupon__off">10<span>%<br/>OFF</span></p>
+          <p class="coupon__txt">your first order* — join the NODEX Club for early drops, secret codes and zero spam.</p>
+        </div>
+        <form class="coupon__form" id="couponForm">
+          <label>NAME<input type="text" name="name" autocomplete="off" /></label>
+          <label>E-MAIL<input type="email" name="email" required /></label>
+          <fieldset>
+            <legend>I’M INTO</legend>
+            <label class="chk"><input type="checkbox" /> <span></span>Audio</label>
+            <label class="chk"><input type="checkbox" /> <span></span>Mobile</label>
+            <label class="chk"><input type="checkbox" /> <span></span>Gaming</label>
+            <label class="chk"><input type="checkbox" /> <span></span>Cameras</label>
+          </fieldset>
+          <button class="btn-print" type="submit">MAIL IT →</button>
+        </form>
+        <p class="coupon__fine">*Valid until 31.12.2026. One per customer. Not redeemable for cash. NODEX Electronics.</p>
+        <div class="stamp" id="stamp">RECEIVED<small>NODEX CLUB · 2026</small></div>
+      </div>
+      <div class="folio"><span>NODEX MAGAZINE</span><span>READER SERVICE</span><span>010</span></div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <a href="shop.html">All products</a>
+        <a href="new-in.html">New In</a>
+        <a href="deals.html">Deals</a>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big" id="backBig">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · 東京 · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

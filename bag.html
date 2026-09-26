@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>Your Bag — NODEX</title>
+  <meta name="description" content="Your NODEX bag: items, coupon codes, shipping and a printed receipt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Yellowtail&family=Zen+Kaku+Gothic+New:wght@500;900&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bag.css" />
+</head>
+<body class="bg-page">
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>EVERY ORDER GIFT-WRAPPED</span><span>♡</span><span>FREE SHIPPING OVER €49</span><span>♡</span><span class="kanji">ありがとう</span><span>♡</span><span>PAY IN 3</span><span>♡</span><span>30-DAY RETURNS</span><span>♡</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <a class="mast__logo" href="index.html" aria-label="NODEX home">NODEX<small>®</small></a>
+    <nav class="mast__nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="new-in.html">New In</a>
+      <a href="deals.html">Deals</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <!-- current page: not a link -->
+      <span class="mast__bag is-current" id="bagLink" aria-current="page">Bag (<b data-bag-count>0</b>)</span>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html"><span>00</span>Home</a>
+    <a href="shop.html"><span>01</span>Shop</a>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <a href="deals.html"><span>03</span>Deals</a>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <a href="about.html"><span>05</span>About</a>
+    <a href="contact.html"><span>06</span>Contact</a>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main>
+    <!-- =====================================================
+         COVER — a department-store paper bag
+         ===================================================== -->
+    <section class="bg-cover" id="bgCover">
+      <div class="bg-cover__wrap" aria-hidden="true"></div>
+
+      <div class="bg-cover__copy">
+        <p class="bg-issue"><span class="bg-red">YOUR BAG</span><span id="pillItems">0 ITEMS</span><span>SAVED ON THIS DEVICE</span></p>
+        <p class="bg-cover__kick">almost yours ♡</p>
+        <h1 class="bg-cover__title" aria-label="Your bag">
+          <span class="bg-cover__your">YOUR</span>
+          <span class="bg-cover__bag">BAG<em>.</em></span>
+        </h1>
+        <p class="bg-cover__lead" id="coverLead">Everything you picked, in one place. Check the details, add a code, and we’ll wrap it like a present.</p>
+        <div class="bg-stats">
+          <span><b id="statItems">0</b>ITEMS</span>
+          <span><b id="statSub">€0</b>SUBTOTAL</span>
+          <span><b id="statShip">€49</b><i id="statShipLbl">TO FREE SHIPPING</i></span>
+        </div>
+        <div class="bg-cover__ctas">
+          <button class="bg-btn bg-btn--red" id="toReceipt">REVIEW &amp; CHECKOUT ↓</button>
+          <a class="bg-btn" href="shop.html">KEEP SHOPPING →</a>
+        </div>
+      </div>
+
+      <figure class="bg-cover__art" id="coverArt">
+        <div class="pbag">
+          <div class="pbag__peek" id="peek"></div>
+          <span class="pbag__handle pbag__handle--back" aria-hidden="true"></span>
+          <div class="pbag__body">
+            <span class="pbag__logo">NODEX<small>®</small></span>
+            <span class="pbag__tag">CONNECTING YOU</span>
+            <span class="pbag__jp kanji" aria-hidden="true">ありがとう</span>
+          </div>
+          <span class="pbag__handle pbag__handle--front" aria-hidden="true"></span>
+          <span class="pbag__bow" aria-hidden="true"></span>
+        </div>
+        <span class="pbag__count" id="bagBadge">0</span>
+      </figure>
+    </section>
+
+    <!-- =====================================================
+         THE BAG — items + receipt
+         ===================================================== -->
+    <section class="checkout" id="checkout">
+      <div class="lines">
+        <header class="bg-sec">
+          <p class="bg-sec__num">01</p>
+          <div>
+            <h2 class="bg-sec__title">WHAT’S INSIDE</h2>
+            <p class="bg-sec__hand">tap + or − to change it</p>
+          </div>
+        </header>
+        <ul class="lines__list" id="lines"></ul>
+
+        <div class="empty" id="empty" hidden>
+          <div class="empty__tv" aria-hidden="true"><span>NO SIGNAL</span></div>
+          <h3 class="empty__title">Your bag is empty</h3>
+          <p class="empty__txt">Nothing here yet. The good stuff is one click away.</p>
+          <div class="bg-cover__ctas">
+            <a class="bg-btn bg-btn--red" href="new-in.html">SEE WHAT’S NEW →</a>
+            <a class="bg-btn" href="deals.html">TODAY’S DEALS →</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="receipt-col" id="receiptCol">
+        <div class="receipt" id="receipt">
+          <div class="receipt__paper">
+            <p class="receipt__store">NODEX<small>ELECTRONICS · MILANO</small></p>
+            <p class="receipt__meta"><span id="rcDate">--</span><span id="rcNo">No. 0000</span></p>
+            <p class="receipt__rule">================================</p>
+            <ul class="receipt__lines" id="rcLines"></ul>
+            <p class="receipt__rule">--------------------------------</p>
+            <p class="receipt__row"><span>SUBTOTAL</span><span id="rcSub">€0</span></p>
+            <p class="receipt__row receipt__row--off" id="rcOffRow" hidden><span id="rcOffLbl">CODE</span><span id="rcOff">−€0</span></p>
+            <p class="receipt__row"><span>SHIPPING · ITALY</span><span id="rcShip">€0</span></p>
+            <p class="receipt__small receipt__small--l">EU €9.90 · UK/CH/NO €14.90 · <a href="shipping.html">rates</a></p>
+            <p class="receipt__rule">================================</p>
+            <p class="receipt__row receipt__row--total"><span>TOTAL</span><span id="rcTotal">€0</span></p>
+            <p class="receipt__small" id="rcPay3">or 3 payments of €0</p>
+
+            <form class="code" id="codeForm" autocomplete="off">
+              <label for="codeInput">DISCOUNT CODE</label>
+              <div class="code__row">
+                <input id="codeInput" name="code" type="text" placeholder="e.g. NODEX10" spellcheck="false" />
+                <button type="submit">APPLY</button>
+              </div>
+              <p class="code__msg" id="codeMsg" role="status"></p>
+            </form>
+
+            <div class="ship" id="shipBox">
+              <p id="shipTxt">€49 to free shipping</p>
+              <div class="ship__bar"><i id="shipBar"></i></div>
+            </div>
+
+            <button class="receipt__cta" id="checkoutBtn">CHECKOUT →</button>
+            <p class="receipt__note" id="checkoutNote" role="status" hidden>Checkout is being wired up. Your bag stays saved on this device ✦</p>
+
+            <div class="receipt__barcode" aria-hidden="true"></div>
+            <p class="receipt__thanks">THANK YOU ♡ <span class="kanji">ありがとう</span></p>
+          </div>
+        </div>
+        <ul class="perks">
+          <li><b>GIFT-WRAPPED</b>tissue, stickers and a handwritten note</li>
+          <li><b>2-YEAR WARRANTY</b>vintage included</li>
+          <li><b>30-DAY RETURNS</b>free and easy</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- =====================================================
+         GOES WELL WITH
+         ===================================================== -->
+    <section class="more" id="more">
+      <header class="bg-sec">
+        <p class="bg-sec__num">02</p>
+        <div>
+          <h2 class="bg-sec__title">GOES WELL WITH</h2>
+          <p class="bg-sec__hand">little extras for your order</p>
+        </div>
+        <p class="bg-sec__jp kanji" aria-hidden="true">おすすめ</p>
+      </header>
+      <div class="more__row" id="moreRow"></div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <a href="shop.html">All products</a>
+        <a href="new-in.html">New In</a>
+        <a href="deals.html">Deals</a>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · <span class="kanji">東京</span> · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/bag.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

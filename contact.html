@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>Contact — NODEX</title>
+  <meta name="description" content="Write to NODEX: orders, returns, product questions, trade-ins and press. A real person answers within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Yellowtail&family=Special+Elite&family=Zen+Kaku+Gothic+New:wght@500;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body class="ct-page">
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>PAR AVION</span><span>✉</span><span>REPLIES WITHIN 24H</span><span>✉</span><span class="kanji">お問い合わせ</span><span>✉</span><span>MON–SAT 10:00–19:00</span><span>✉</span><span>A REAL PERSON ANSWERS</span><span>✉</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <a class="mast__logo" href="index.html" aria-label="NODEX home">NODEX<small>®</small></a>
+    <nav class="mast__nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="new-in.html">New In</a>
+      <a href="deals.html">Deals</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <a href="bag.html" class="mast__bag" id="bagLink">Bag (<b data-bag-count>0</b>)</a>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html"><span>00</span>Home</a>
+    <a href="shop.html"><span>01</span>Shop</a>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <a href="deals.html"><span>03</span>Deals</a>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <a href="about.html"><span>05</span>About</a>
+    <span class="is-current" aria-current="page"><span>06</span>Contact</span>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main>
+    <!-- =====================================================
+         COVER — airmail
+         ===================================================== -->
+    <section class="ct-cover" id="ctCover">
+      <div class="ct-cover__bg" aria-hidden="true"></div>
+
+      <div class="ct-cover__copy">
+        <p class="ct-issue"><span class="ct-red">CONTACT</span><span>REPLY IN 24H</span><span>MON–SAT</span></p>
+        <p class="ct-cover__kick">we read every letter</p>
+        <h1 class="ct-cover__title" aria-label="Contact us">
+          <span class="ct-cover__a">CONTACT</span>
+          <span class="ct-cover__b">US<em>✉</em></span>
+        </h1>
+        <p class="ct-cover__lead">Where’s my order? Does this flip phone take my SIM? Want to sell us your old Discman? Write to us: a real person on the bench answers, usually the same day.</p>
+        <div class="ct-stats">
+          <span><b>24H</b>REPLY TIME</span>
+          <span><b>6</b>DAYS A WEEK</span>
+          <span><b>10–19</b>OPENING HOURS</span>
+        </div>
+        <div class="ct-cover__ctas">
+          <button class="ct-btn ct-btn--red" id="toWrite">WRITE TO US ↓</button>
+          <a class="ct-btn" href="faq.html">READ THE FAQ →</a>
+        </div>
+      </div>
+
+      <figure class="ct-cover__art" id="coverArt">
+        <div class="env">
+          <div class="env__stripes" aria-hidden="true"></div>
+          <p class="env__avion" aria-hidden="true">PAR AVION<small>BY AIR MAIL</small></p>
+          <div class="pstamp">
+            <div class="pstamp__in">
+              <div class="ph" data-img="img/contact-model" data-label="contact-model — portrait 4:5"></div>
+              <span class="pstamp__val">€0.49</span>
+              <span class="pstamp__nx">NODEX</span>
+            </div>
+          </div>
+          <span class="postmark" aria-hidden="true"><span>MILANO</span><b id="pmDate">26·09·26</b><span>NODEX</span></span>
+          <div class="env__to" aria-hidden="true">
+            <p>TO: <b>YOU</b></p>
+            <p>FROM: the NODEX bench</p>
+            <p>Milano · Italy</p>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- =====================================================
+         WRITE TO US — the letter
+         ===================================================== -->
+    <section class="write" id="write">
+      <header class="ct-sec">
+        <p class="ct-sec__num">01</p>
+        <div>
+          <h2 class="ct-sec__title">WRITE TO US</h2>
+          <p class="ct-sec__hand">your draft saves itself as you type</p>
+        </div>
+        <p class="ct-sec__jp kanji" aria-hidden="true">手紙</p>
+      </header>
+
+      <div class="desk">
+        <form class="letter" id="letter" novalidate>
+          <div class="letter__edge" aria-hidden="true"></div>
+          <p class="letter__date" id="letterDate">Milano, 26 September 2026</p>
+          <p class="letter__hi">Dear NODEX,</p>
+
+          <fieldset class="topics">
+            <legend>I’m writing about…</legend>
+            <div class="topics__row" id="topics"></div>
+          </fieldset>
+
+          <div class="letter__grid">
+            <label class="field">
+              <span>My name</span>
+              <input name="name" id="fName" type="text" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>Reply to (email)</span>
+              <input name="email" id="fEmail" type="email" autocomplete="email" required />
+            </label>
+            <label class="field field--order" id="orderField" hidden>
+              <span>Order number <i>(on your confirmation email)</i></span>
+              <input name="order" id="fOrder" type="text" placeholder="NX-0000" />
+            </label>
+          </div>
+
+          <label class="field field--msg">
+            <span>Message</span>
+            <textarea name="message" id="fMsg" rows="7" required placeholder="Tell us everything…"></textarea>
+          </label>
+          <p class="letter__count"><span id="msgCount">0</span> / 1000</p>
+
+          <p class="letter__sign">Love,<b id="signName">…</b></p>
+
+          <div class="letter__foot">
+            <p class="letter__err" id="letterErr" role="alert"></p>
+            <button class="ct-btn ct-btn--red" type="submit" id="sendBtn">POST IT ✈</button>
+          </div>
+        </form>
+
+        <div class="sent" id="sent" hidden>
+          <div class="sent__env" aria-hidden="true"><span class="sent__flap"></span><span class="sent__seal">N</span></div>
+          <h3 class="sent__title">POSTED! ✦</h3>
+          <p class="sent__txt" id="sentTxt">Thanks! We’ll reply within 24 hours.</p>
+          <button class="ct-btn" id="another" type="button">WRITE ANOTHER</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         OTHER WAYS — postcards
+         ===================================================== -->
+    <section class="cards-sec" id="ways">
+      <header class="ct-sec ct-sec--light">
+        <p class="ct-sec__num">02</p>
+        <div>
+          <h2 class="ct-sec__title">OTHER WAYS</h2>
+          <p class="ct-sec__hand">postcards from the shop</p>
+        </div>
+        <p class="ct-sec__jp kanji" aria-hidden="true">案内</p>
+      </header>
+      <div class="pcards">
+        <article class="pcard">
+          <p class="pcard__k">VISIT</p>
+          <h3 class="pcard__t">The Milano showroom</h3>
+          <p class="pcard__x">Try before you buy: every console plugged in, every Discman spinning. Visits by appointment, just write to us first.</p>
+          <button class="pcard__go" data-topic="visit">BOOK A VISIT →</button>
+          <span class="pcard__stamp" aria-hidden="true">01</span>
+        </article>
+        <article class="pcard">
+          <p class="pcard__k">HOURS</p>
+          <h3 class="pcard__t">Mon–Sat, 10:00–19:00</h3>
+          <p class="pcard__x">Messages sent on Sunday get answered first thing Monday. Orders placed before 14:00 leave the bench within two working days.</p>
+          <a class="pcard__go" href="shipping.html">SHIPPING TIMES →</a>
+          <span class="pcard__stamp" aria-hidden="true">02</span>
+        </article>
+        <article class="pcard">
+          <p class="pcard__k">TRADE-IN</p>
+          <h3 class="pcard__t">Sell us your gadgets</h3>
+          <p class="pcard__x">Old phones, handhelds, CD players, camcorders: send us a photo and we’ll make you an offer or store credit.</p>
+          <button class="pcard__go" data-topic="trade">MAKE AN OFFER →</button>
+          <span class="pcard__stamp" aria-hidden="true">03</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         QUICK ANSWERS
+         ===================================================== -->
+    <section class="qa" id="qa">
+      <header class="ct-sec">
+        <p class="ct-sec__num">03</p>
+        <div>
+          <h2 class="ct-sec__title">QUICK ANSWERS</h2>
+          <p class="ct-sec__hand">maybe you don’t even need to write</p>
+        </div>
+      </header>
+      <div class="qa__list" id="qaList"></div>
+      <p class="qa__more"><a class="ct-btn" href="faq.html">ALL QUESTIONS →</a></p>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <a href="shop.html">All products</a>
+        <a href="new-in.html">New In</a>
+        <a href="deals.html">Deals</a>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <span class="is-current" aria-current="page">Contact</span>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · <span class="kanji">東京</span> · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

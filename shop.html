@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#111114" />
+  <title>The Catalogue — NODEX</title>
+  <meta name="description" content="Shop every NODEX product: audio, mobile, retro consoles, computers, cameras and accessories." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Instrument+Serif:ital@0;1&family=Michroma&family=Zen+Dots&family=Yellowtail&family=Zen+Kaku+Gothic+New:wght@500;900&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+</head>
+<body class="shop-page">
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="ticker"><div class="ticker__track">
+    <span>FREE SHIPPING OVER €49</span><span>✦</span><span>2-YEAR WARRANTY</span><span>✦</span><span>30-DAY RETURNS</span><span>✦</span><span>CONNECT WITH THE FUTURE</span><span>✦</span><span class="kanji">未来へつながる</span><span>✦</span><span>PAY IN 3</span><span>✦</span>
+  </div></div>
+
+  <header class="mast" id="mast">
+    <a class="mast__logo" href="index.html" aria-label="NODEX home">NODEX<small>®</small></a>
+    <nav class="mast__nav" aria-label="Main">
+      <!-- current page: not a link -->
+      <span class="is-current" aria-current="page">Shop</span>
+      <a href="new-in.html">New In</a>
+      <a href="deals.html">Deals</a>
+      <a href="brands.html">Brands</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="mast__right">
+      <a href="search.html" class="mast__search">Search</a>
+      <a href="bag.html" class="mast__bag" id="bagLink">Bag (<b data-bag-count>0</b>)</a>
+      <button class="mast__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="index.html"><span>00</span>Home</a>
+    <span class="is-current" aria-current="page"><span>01</span>Shop</span>
+    <a href="new-in.html"><span>02</span>New In</a>
+    <a href="deals.html"><span>03</span>Deals</a>
+    <a href="brands.html"><span>04</span>Brands</a>
+    <a href="about.html"><span>05</span>About</a>
+    <a href="contact.html"><span>06</span>Contact</a>
+    <a href="search.html"><span>07</span>Search</a>
+  </div>
+
+  <main>
+    <!-- =====================================================
+         SECTION OPENER
+         ===================================================== -->
+    <header class="store-head" id="storeHead">
+      <div class="store-head__grid" aria-hidden="true"></div>
+
+      <div class="store-head__bar">
+        <span class="chip chip--dark">NODEX STORE</span>
+        <span>ONLINE CATALOGUE SYSTEM · VER 1.0</span>
+        <span class="store-head__status"><i></i>ALL SYSTEMS IN STOCK</span>
+      </div>
+
+      <div class="store-head__main">
+        <div class="logo-lockup">
+          <svg class="logo-lockup__orbit" viewBox="0 0 600 220" aria-hidden="true">
+            <ellipse cx="300" cy="110" rx="286" ry="72" />
+            <path class="star" d="M540 30 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7z" />
+          </svg>
+          <p class="logo-lockup__kick">introducing :</p>
+          <h1 class="logo-lockup__name" data-t="NODEX">NODEX</h1>
+          <p class="logo-lockup__store">S T O R E</p>
+          <span class="spark spark--1" aria-hidden="true">✦</span>
+          <span class="spark spark--2" aria-hidden="true">✦</span>
+          <span class="spark spark--3" aria-hidden="true">✧</span>
+          <span class="logo-lockup__jp kanji" aria-hidden="true">通信販売</span>
+        </div>
+
+        <p class="store-head__intro">Retro consoles cleaned and tested, flip phones with new batteries, camcorders, boomboxes and tiny charms. <b>Everything in stock, ready to ship.</b></p>
+
+        <ul class="store-head__lcd">
+          <li><b id="factCount">00</b><span>ITEMS ONLINE</span></li>
+          <li><b>€49</b><span>FREE SHIPPING FROM</span></li>
+          <li><b>2YR</b><span>WARRANTY</span></li>
+        </ul>
+      </div>
+
+      <figure class="store-head__model" aria-hidden="true">
+        <div class="win win--a"><p class="win__bar"><span>CAM_01.MOV</span><i>● REC</i></p><img src="img/shop-model-cables.webp" alt="" /></div>
+        <div class="win win--b"><p class="win__bar"><span>CH.03</span><i>ON AIR</i></p><img src="img/shop-model-tvs.webp" alt="" /></div>
+        <div class="store-head__disc"></div>
+        <img class="store-head__cut" src="img/shop-model-cam.webp" alt="" />
+        <span class="tag tag--1"><i></i>ITEM: HANDYCAM</span>
+        <span class="tag tag--2"><i></i>STATUS: ON AIR ●</span>
+        <span class="tag tag--3"><i></i>38 ITEMS · 6 DEPTS</span>
+      </figure>
+    </header>
+
+    <!-- =====================================================
+         FILTER BAR
+         ===================================================== -->
+    <div class="filters" id="filters">
+      <div class="tabs" id="tabs" role="tablist" aria-label="Departments"></div>
+      <div class="filters__right">
+        <label class="search">
+          <span class="visually-hidden">Search the catalogue</span>
+          <input type="search" id="search" placeholder="Search the catalogue…" autocomplete="off" />
+        </label>
+        <label class="sort">
+          <span>SORT</span>
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="new">Newest</option>
+            <option value="low">Price: low → high</option>
+            <option value="high">Price: high → low</option>
+            <option value="az">A → Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p class="result-line"><span class="chip chip--dark">RESULTS</span><b id="resultCount">0</b> <span id="resultLabel">items in all departments</span></p>
+
+    <!-- =====================================================
+         GRID (built by js/shop.js from js/products.js)
+         ===================================================== -->
+    <section class="grid" id="grid" aria-live="polite"></section>
+
+    <div class="empty" id="empty" hidden>
+      <p class="empty__big">NO SIGNAL</p>
+      <p>Nothing in the catalogue matches that. Try another word or department.</p>
+      <button class="btn-print" id="resetBtn">RESET FILTERS</button>
+    </div>
+
+    <!-- =====================================================
+         PERKS — like stamps on the back of an envelope
+         ===================================================== -->
+    <section class="perks">
+      <div class="perk"><i class="perk__ico">✈</i><div><span class="kanji">送料無料</span><b>Free shipping</b><small>on orders over €49</small></div></div>
+      <div class="perk"><i class="perk__ico">★</i><div><span class="kanji">保証</span><b>2-year warranty</b><small>even on retro gear</small></div></div>
+      <div class="perk"><i class="perk__ico">↺</i><div><span class="kanji">返品</span><b>30-day returns</b><small>no questions, no drama</small></div></div>
+      <div class="perk"><i class="perk__ico">③</i><div><span class="kanji">分割</span><b>Pay in 3</b><small>interest-free</small></div></div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       QUICK LOOK (spec sheet)
+       ===================================================== -->
+  <div class="qv" id="qv" hidden>
+    <div class="qv__backdrop" data-close></div>
+    <div class="qv__sheet" role="dialog" aria-modal="true" aria-labelledby="qvName">
+      <button class="qv__x" data-close aria-label="Close">✕</button>
+      <div class="qv__panel" id="qvPanel">
+        <span class="qv__no" id="qvNo"></span>
+        <svg class="qv__ring" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="qvRing" d="M100,100 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0"/></defs><text><textPath href="#qvRing" textLength="560">NODEX QUALITY ✦ CLEANED ✦ TESTED ✦ READY TO SHIP ✦</textPath></text></svg>
+        <div class="qv__img" id="qvImg"></div>
+      </div>
+      <div class="qv__info">
+        <p class="qv__cat" id="qvCat"></p>
+        <h2 class="qv__name" id="qvName"></h2>
+        <p class="qv__blurb" id="qvBlurb"></p>
+        <table class="spec qv__spec"><thead><tr><th>Specification</th><th>Details</th></tr></thead><tbody id="qvSpec"></tbody></table>
+        <div class="qv__colors"><span>COLOUR</span><div id="qvColors"></div></div>
+        <div class="qv__buy">
+          <p class="price" id="qvPrice"></p>
+          <div class="qty"><button id="qtyMinus" aria-label="Less">−</button><output id="qtyVal">1</output><button id="qtyPlus" aria-label="More">+</button></div>
+          <button class="btn-print" id="qvAdd">ADD TO BAG</button>
+        </div>
+        <p class="qv__note">Free shipping over €49 · 2-year warranty · 30-day returns</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       BACK COVER
+       ===================================================== -->
+  <footer class="back">
+    <div class="back__vinyl" aria-hidden="true"><div class="vinyl"></div></div>
+    <div class="back__cols">
+      <div>
+        <h4>SHOP</h4>
+        <span class="is-current" aria-current="page">All products</span>
+        <a href="new-in.html">New In</a>
+        <a href="deals.html">Deals</a>
+        <a href="brands.html">Brands</a>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>NODEX</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="back__big">NODEX</div>
+    <div class="back__fine">
+      <span>© 2026 NODEX Electronics</span>
+      <span>Printed in Italy · <span class="kanji">東京</span> · Milano</span>
+      <span>&gt;Present Day &gt;Present Time<b class="caret">_</b></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>
